@@ -52,6 +52,10 @@ $config = [
         */
     ],
     'params' => $params,
+    'exchange' => [
+        'class' => 'app\components\exchange\ExchangeComponent',
+        'config' => require __DIR__ . '/exchange.php',
+    ],
 ];
 
 if (YII_ENV_DEV) {

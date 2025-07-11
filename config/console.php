@@ -26,6 +26,10 @@ $config = [
             ],
         ],
         'db' => $db,
+        'exchange' => [
+            'class' => 'app\components\exchange\ExchangeComponent',
+            'config' => require __DIR__ . '/exchange.php',
+        ],
     ],
     'params' => $params,
     /*
